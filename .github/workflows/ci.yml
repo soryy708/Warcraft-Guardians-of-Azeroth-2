@@ -6,6 +6,10 @@ jobs:
   ci:
     name: Continuous Integration
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      contents: read
+      statuses: write
     steps:
       - name: Checkout the branch
         uses: actions/checkout@v3
