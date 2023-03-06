@@ -1,0 +1,25 @@
+name: Continuous Integration
+on:
+  pull_request
+
+jobs:
+  ci:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the branch
+        uses: actions/checkout@v3
+    
+      - name: Fetch validator
+        uses: robinraju/release-downloader@v1.7
+        with:
+          repository: amtep/ck3-tiger
+          tag: v0.2.0
+          tarBall: true
+          zipBall: false
+
+      - name: Unzip validator
+        run: tar -xvzf ck3-tiger-linux-v0.2.0.tar.gz
+
+      - name: Run validator
+        run: ck3-tiger ./descriptor.mod
