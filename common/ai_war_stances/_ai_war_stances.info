@@ -11,7 +11,7 @@ name_of_the_stance = {
 	# and areas it will operate in
 	objectives = {
 		# x is base priority value
-		objective = x
+		objective = xx
 		
 		# Only used for enemy_unit_province
 		objective = {

@@ -8,7 +8,7 @@ attacker_offensive = {
 
 		enemy_unit_province = {
 			priority = 300
-			area = wargoal
+			area = wargoa
 			area = primary_attacker
 		}
 	}
@@ -74,7 +74,7 @@ attacker_defensive = {
 	}
 }
 
-defender_offensive = {
+defender_offensi = {
 	enemy_unit_priority = 100
 	
 	objectives = {
