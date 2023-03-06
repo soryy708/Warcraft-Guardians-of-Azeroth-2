@@ -22,4 +22,4 @@ jobs:
         run: tar -xvzf ck3-tiger-linux-v0.2.0.tar.gz
 
       - name: Run validator
-        run: ck3-tiger ./descriptor.mod
+        run: ./ck3-tiger-linux-v0.2.0/ck3-tiger ./descriptor.mod
